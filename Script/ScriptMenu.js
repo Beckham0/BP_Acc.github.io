@@ -2,7 +2,7 @@ function createNavbar() {
     const navbarHTML = `
   <nav class="navbar navbar-expand-lg bg-body-tertiary"style="z-index: 999;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="Source/IMG_2482.JPG" width="130" height="94"></a>
+      <a class="navbar-brand" href="#"> <img src="Source/IMG_2485.JPG" width="130" height="94"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -57,7 +57,7 @@ function createfooter() {
 <footer style="border-top: 11px doublergba(255, 255, 255, 0.58);" class = "FooterHTML">
     <div class="footer-container">
       <div class="footer-left">
-        <div class="footer-left-1"><img src="Source/IMG_2482.JPG" alt="NRP Logo" class="logo"></div>
+        <div class="footer-left-1"><img src="Source/IMG_2485.JPG" alt="NRP Logo" class="logo"></div>
         <div class="footer-left-1"><p class="company-name">บริษัท เอ็นอาร์พี มายแอคเคาท์ จำกัด</p>
         <p class="address">
           115/8 หมู่บ้านพฤกษา รังสิต-วงแหวน หมู่2 ตำบลลำผักกูด อำเภอธัญบุรี ปทุมธานี<br>
