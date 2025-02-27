@@ -9,33 +9,16 @@ function createNavbar() {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav " >
           <li class="nav-item">
-            <a class="nav-link a"  href="./Index.html">หน้าเเรก</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link b" href="./Our_about.html">เกี่ยวกับเรา</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle c" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              บริการเรา
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="รับทำบัญชี ปิดงบ ยืนภาษี.html">รับทำบัญชี ปิดงบ ยืนภาษี</a></li>
-              <li><a class="dropdown-item" href="บริการสอบบัญชี.html">บริการสอบบัญชี</a></li>
-              <li><a class="dropdown-item" href="รับวางระบบภาษี.html">รับวางระบบภาษี</a></li>
-              <li><a class="dropdown-item" href="บริการงานทะเบียน.html">บริการงานทะเบียน</a></li>
-              <li><a class="dropdown-item" href="บริการขอใบอนุญาติสถานที่เก็บอาหาร.html">บริการขอใบอนุญาติสถานที่เก็บอาหาร</a></li>
-              <li><a class="dropdown-item" href="บริการงานจดทะเบียนบริษัท.html">บริการงานจดทะเบียนบริษัท</a></li>
-              <li><a class="dropdown-item" href="บริการขอใบอนุญาตินำเข้า-ส่งออก.html">บริการขอใบอนุญาตินำเข้า-ส่งออก</a></li>
-            </ul>
+                    <li class="nav-item">
+            <a class="nav-link c" href="./Our_about.html">บริการเรา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link d" href="./our_work.html">ผลงานเรา</a>
+            <a class="nav-link d" href="./our_work.html">ลูกค้าเรา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link e" href="./info.html" >ข่าวสาร</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link f" href="./contact_us.html" >ติดต่อเรา</a>
+            <a class="nav-link e" href="./contact_us.html" >ติดต่อเรา</a>
           </li>
         </ul>
       </div>

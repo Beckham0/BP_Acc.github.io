@@ -16,11 +16,11 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(rgb(255, 255, 255) 8%, rgb(255, 255, 255) 100%);
+  background-color: rgb(255, 255, 255)!important;
 }
 
 .start {
-  background-color: #CB9B35;
+  background-color: #35A8CB;
   padding: 1px;
   width: 100%;
   display: flex;
@@ -30,6 +30,11 @@ body {
 font-size: 15px;
 text-align: center;
 margin: 10px auto;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1!important;
+  background-color: rgb(255, 255, 255)!important;
 }
 
 ***********************************************************************
@@ -60,7 +65,7 @@ margin: 10px auto;
 
 }
 .nav-link:hover {
-  color: #CB9B35 !important;
+  color: #35A8CB !important;
 
 }
 
@@ -118,7 +123,7 @@ margin: 10px auto;
 /* footer */
 
 footer {
-  background-color: rgb(202, 174, 85);;
+  background-color:#35A8CB;;
   color: white;
   padding: 30px 50px;
 }
