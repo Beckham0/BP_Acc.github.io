@@ -41,10 +41,16 @@ function createfooter() {
     <div class="footer-container">
       <div class="footer-left">
         <div class="footer-left-1"><img src="Source/IMG_2485.JPG" alt="NRP Logo" class="logo"></div>
-        <div class="footer-left-1"><p class="company-name">บริษัท เอ็นอาร์พี มายแอคเคาท์ จำกัด</p>
+        <div class="footer-left-1"><p class="company-name">บริษัท บี พี แอคเคาท์ เซอร์วิส  กรุ๊ป จำกัด</p>
         <p class="address">
-          115/8 หมู่บ้านพฤกษา รังสิต-วงแหวน หมู่2 ตำบลลำผักกูด อำเภอธัญบุรี ปทุมธานี<br>
-          โทร 062-896-4535 อีเมล: info@nrpmyaccount.com
+           เลขที่ 148/1 สุขุมวิท 22 แขวงคลองเตย เขตคลองเตย กทม.10110 
+          Tax ID 0105566166520
+          B P Account  Service  Group Co., Ltd
+         148/1 Sukhumvit 22, Klongtoie ,Klongtoie District ,Bangkok 10110
+
+         E-mail : boonpong3140@gmail.com  
+         Tel. 091-1629156
+
         </p></div>
       </div>
       <div class="footer-right">
@@ -59,17 +65,17 @@ function createfooter() {
             <a href="#" class=""><li>ระบบงบการเงิน</li></a>
           </ul>
         </div></div>
-        <div class="s-1">
-        <div class="divider"></div>
-        <div class="services">
+                <div class="services">
           <ul>
             <a href="#" class=""><li>สำนักงานบัญชีทรัปเพิ้ลเอิร์น</li></a>
             <a href="#" class=""><li>เป็นที่ปรึกษาการด้านบัญชี</li></a>
             <a href="#" class=""><li>รับทำบัญชีรายเดือน</li></a>
             <a href="#" class=""><li>รับทำบัญชีรายปี</li></a>
             <a href="#" class=""><li>ระบบงบการเงิน</li></a>
+            <div class="footer-left-1"><img src="Source/IMG_2483.JPG" alt="NRP Logo" class="logo"></div>
           </ul>
-        </div></div>
+        </div>
+        
       </div>
     </div>
   </footer>

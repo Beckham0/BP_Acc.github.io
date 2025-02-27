@@ -32,11 +32,6 @@ text-align: center;
 margin: 10px auto;
 }
 
-.bg-body-tertiary {
-  --bs-bg-opacity: 1!important;
-  background-color: rgb(255, 255, 255)!important;
-}
-
 ***********************************************************************
 
 
