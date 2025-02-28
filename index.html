@@ -3,6 +3,8 @@
 <head>
 
     <title>BP_Acc</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Source/IMG_2482.JPG">
     <link rel="stylesheet" href="/Css/front_end.css">
     <link rel="stylesheet" href="/Css/Menu.css">
@@ -26,19 +28,24 @@
 </script>
   
   <div class="start">
-    <h1 style="display: inline;margin: auto;">บริษัท บี พี แอคเคาท์ เซอร์วิส กรุ๊ป จำกัด   </h1> 
-    <div style="display: flex; margin-right: 1rem;"><a href="">TH</a>&nbsp;/&nbsp;<a href="">EN</a></div>
+    <h1 style="display: inline;margin: auto;color: white;">บริษัท บี พี แอคเคาท์ เซอร์วิส กรุ๊ป จำกัด   </h1>
   </div>
     <div id="navbar-container" class="navbar-expand-lg"  style="z-index: 999 !important;"></div>
 
 
-   
-    
-    <br>
-    <br>    
 
+    <section  class="ta_center mg_pade test"  style="display: grid;grid-gap: 1.5rem;"></section>
+      <section class="section_1" id="1">
+      </section>
 
-    <div id="footerHTML1"></div>
+      <section class="section_2" id="2">
+      </section>
+
+      <section class="section_3" id="3">
+      </section>
+
+      <section class="section_4" id="4">
+      </section>
 
       <script src="./Script/ScriptMenu.js"></script>
       <script src="Script/pop-up.js"></script>
@@ -48,24 +55,7 @@
       createfooter();
       </script>
       
-      <script>
-        const texts = [
-          "บริษัท เอ็นอาร์พี",
-          "มายแอคเคาท์ จำกัด",
-          "\"รับดูเเลบัญชี ครบวงจร\""
-        ];
-        let index = 0;
-      
-        function changeText() {
-          const textElements = document.querySelectorAll(".text-container h1");
-          textElements.forEach((el) => el.classList.remove("active"));
-          textElements[index].classList.add("active");
-          index = (index + 1) % texts.length;
-        }
-      
-        changeText(); // แสดงข้อความแรกทันที
-        setInterval(changeText, 5000); // เปลี่ยนข้อความทุก 5 วินาที
-      </script>
+
 
 </body>
 
