@@ -30,6 +30,19 @@ text-align: center;
 margin: 10px auto;
 }
 
+.end{
+  background-color: #35A8CB;
+  padding: 2px;
+  width: 100%;
+  display: flex;
+}
+
+.end h1 {
+font-size: 0.7rem;
+text-align: start;
+margin: 10px 80px;
+}
+
 ***********************************************************************
  .nav-item {
   margin: auto 200px;
@@ -142,5 +155,101 @@ margin: 10px auto;
     text-align: right;
     padding: 0 10px!important;
   
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  justify-content: space-between;
+}
+.footer-column-1 ,
+.footer-column-2 ,
+.footer-column-3 {
+  flex: 1;
+  min-width: 200px;
+  margin: 0px;
+}
+
+.footer-column-1 img{
+  width: 185px;
+  height: 130px;
+}
+
+.footer-column-1 h1{
+  font-size: 30px;
+  margin-bottom: 0;
+  text-align: start;
+  margin-left: 171px;
+  margin-top: 0;
+}
+
+.footer-column-2 h1{
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: start;
+  margin-left: 90px;
+  margin-top: 30px;
+}
+
+.footer-column-2 p{
+  font-size: 25px;
+  margin-bottom: 0;
+  text-align: start;
+  margin-left: 50px;
+}
+
+.footer-column-3 h1{
+  font-size: 30px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: start;
+  margin-left: 90px;
+  margin-top: 30px;
+}
+
+.footer-column-3 p{
+  font-size: 25px;
+  margin-bottom: 0;
+  text-align: start;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      align-items: start;
+      text-align: start;
+  }
+  .footer-column-1 ,
+  .footer-column-2 ,
+  .footer-column-3 {
+      width: 100%;
+  }
+
+  .footer-column-1 h1,
+  .footer-column-2 h1,
+  .footer-column-3 h1{
+     text-align: start;
+     margin-left: 20px;
+  }
+
+  .footer-column-1 p,
+  .footer-column-2 p,
+  .footer-column-3 p{
+     text-align: start;
+     margin-left: 0;
   }
 }

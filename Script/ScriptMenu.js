@@ -2,7 +2,7 @@ function createNavbar() {
     const navbarHTML = `
   <nav class="navbar navbar-expand-lg bg-body"style="z-index: 999; background-color: rgba(255, 255, 255, 0.53) !important;">
     <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html"><img src="Source/IMG_24855.png" width="150" height="100&quot;" style="border-radius: 50px;"></a>
+    <a class="navbar-brand" href="./index.html"><img src="Source/IMG_24855.png" width="150" height="100";" style="border-radius: 50px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
 </button>
@@ -37,7 +37,11 @@ function createNavbar() {
  
 function createfooter() {
   const footerHTML = `
-
+    <footer class="footer">
+        <div class="footer-column">Column 1 Content</div>
+        <div class="footer-column">Column 2 Content</div>
+        <div class="footer-column">Column 3 Content</div>
+    </footer>
   `;
   document.getElementById("footerHTML1").innerHTML = footerHTML;
 
