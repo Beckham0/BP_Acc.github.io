@@ -13,29 +13,21 @@ a {
 }
 
 
-.section_1{
-  width: 100%;
-  height: 950px;
-  background-color: #35A8CB;
+section {
+  height: 100vh;
+  padding: 100px;
+  text-align: center;
 }
 
-.section_2{
-  width: 100%;
-  height: 950px;
-  background-color: #ffffff;
+section h1 {
+font-size: 2rem;
+margin-top: 30px;
 }
 
-.section_3{
-  width: 100%;
-  height: 950px;
-  background-color: #35A8CB;
-}
-
-.section_4{
-  width: 100%;
-  height: 950px;
-  background-color: #ffffff;
-}
+#about { background: #35A8CB;color: #ffffff; }
+#services { background: rgb(255, 255, 255);color: #35A8CB; }
+#clients { background: #35A8CB;color: #ffffff; }
+#contact { background: rgb(255, 255, 255);color: #35A8CB; }
 
 
 
