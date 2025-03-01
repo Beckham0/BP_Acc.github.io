@@ -1,13 +1,11 @@
 function createNavbar() {
     const navbarHTML = `
-  <nav class="navbar navbar-expand-lg bg-body" style="z-index: 999; background-color: rgb(255, 255, 255) !important;">
+  <nav class="navbar navbar-expand-lg bg-body"style="z-index: 999; background-color: rgb(255, 255, 255) !important;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
-        <img src="Source/IMG_2485.JPG" width="150" height="100" style="border-radius: 50px;">
-      </a>
+    <a class="navbar-brand" href="./index.html"><img src="Source/IMG_2485.JPG" width="150" height="100&quot;" style="border-radius: 50px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+</button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
