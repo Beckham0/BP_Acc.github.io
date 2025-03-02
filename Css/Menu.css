@@ -188,16 +188,22 @@ margin: 10px 80px;
   height: 135px;
 } 
 
-.icon img {
+.column {
   width: 200px;
   height: 70px;
   background-color: #35A8CB;
   border-radius: 89px;
 }
 
-.footer-column-1 h1{
-  font-size: 30px;
-  color: #35A8CB;
+.column img {
+    width: 61px;
+    height: 39px;
+    text-align: start;
+}
+
+.column h1 {
+  font-size: 20px;
+  color: #ffffff;
   margin-bottom: 0;
   text-align:center;
   margin-top: 0;
