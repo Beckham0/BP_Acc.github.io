@@ -184,17 +184,33 @@ margin: 10px 80px;
 }
 
 .footer-column-1 img{
-  width: 185px;
-  height: 130px;
+  width: 200px;
+  height: 135px;
+} 
+
+.icon img {
+  width: 200px;
+  height: 70px;
+  background-color: #35A8CB;
+  border-radius: 89px;
 }
 
 .footer-column-1 h1{
   font-size: 30px;
+  color: #35A8CB;
   margin-bottom: 0;
-  text-align: start;
-  margin-left: 171px;
+  text-align:center;
   margin-top: 0;
 }
+
+.footer-column-1 p{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
 
 .footer-column-2 h1{
   font-size: 30px;
@@ -202,10 +218,11 @@ margin: 10px 80px;
   text-align: start;
   margin-left: 90px;
   margin-top: 30px;
+  color: #35A8CB;
 }
 
 .footer-column-2 p{
-  font-size: 25px;
+  font-size: 1.7rem;
   margin-bottom: 0;
   text-align: start;
   margin-left: 50px;
@@ -218,13 +235,23 @@ margin: 10px 80px;
   text-align: start;
   margin-left: 90px;
   margin-top: 30px;
+  color: #35A8CB;
 }
 
 .footer-column-3 p{
-  font-size: 25px;
+  font-size: 1.7rem;
   margin-bottom: 0;
   text-align: start;
   margin-left: 50px;
+}
+
+.footer-column-2 a,
+.footer-column-3 a{
+color: #ffffff;
+}
+
+.footer-column-2 a .contact{
+  color: #35A8CB;
 }
 
 @media (max-width: 768px) {
@@ -250,6 +277,6 @@ margin: 10px 80px;
   .footer-column-2 p,
   .footer-column-3 p{
      text-align: start;
-     margin-left: 0;
+     margin-left: 20px
   }
 }
