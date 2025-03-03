@@ -13,18 +13,121 @@ section {
 
 
 section h1 {
-font-size: clamp(40px,3.5vw,70px);
-margin-top: 30px;
-font-weight: bold;
+  font-size: clamp(40px,3.5vw,70px);
+  margin-top: 18px;
+  font-weight: bold;
 }
 
 #about { background: #35A8CB;color: #ffffff; }
 #services { background: rgb(255, 255, 255);color: #35A8CB; }
-#clients { background: #35A8CB;color: #ffffff; }
-#contact { background: rgb(255, 255, 255);color: #35A8CB; }
+#how { background: #35A8CB;;color: #ffffff; }
+#clients { background: #ffffff;color: #35A8CB }
+#contact { background: #35A8CB;color: #ffffff; }
 
 
 
+.container {
+  max-width: 1559px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 30px;
+}
+
+.service-box {
+  background-color: #35A8CB;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.service-box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.service-box h1 {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: white;
+}
+
+.service-box p {
+  padding: 20px 30px;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+    line-height: 1.2;
+  color: white;
+  text-align: start;
+}
+
+
+
+
+.service-boxx {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.service-boxx img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.service-boxx h1 {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: #35A8CB;
+}
+
+.service-boxx p {
+  padding: 20px 30px;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+    line-height: 1.2;
+  color: #35A8CB;
+  text-align: start;
+}
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 10px;
+  padding: 20px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+      flex-direction: column;
+      align-items: center;
+  }
+  .gallery img {
+      max-width: 100%;
+  }
+}
 
 
 
