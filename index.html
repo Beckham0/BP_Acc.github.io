@@ -51,13 +51,34 @@
 
     </section>
 
-    <section id="about">
-      <h1>เกี่ยวกับเรา</h1>
-
+    <section id="about" style="padding: 10px;height: auto;">
 <br>
-      <h2>”สำนักงานบัญชีรุ่นใหม่ ใส่ใจธุรกิจยุคใหม่“</h2>
-      <p>บริษัท บี พี แอคเคาท์ เซอร์วิส กรุ๊ป จำกัด คือสำนักงานบัญชีที่พร้อมให้บริการด้วยความเข้าใจอย่างลึกซึ้งในธุรกิจยุคใหม่ ด้วยทีมงานมืออาชีพมากประสบการณ์ พร้อมเทคโนโลยีที่ทันสมัย เพื่อให้การจัดการบัญชีของคุณเป็นเรื่องง่าย รวดเร็ว และมีประสิทธิภาพ</p>
+<div class="about-us">
+  <h1 style="margin-top: 15px;">เกี่ยวกับเรา</h1>
+  <div class="subtitle">"สำนักงานบัญชีรุ่นใหม่ ใส่ใจธุรกิจยุคใหม่"</div>
+  <p>บริษัท บี พี แอคเคาท์ เซอร์วิส กรุ๊ป จำกัด คือสำนักงานบัญชีที่พร้อมให้บริการด้วยความเข้าใจอย่างลึกซึ้งในธุรกิจยุคใหม่ ด้วยทีมงานมืออาชีพมากประสบการณ์ พร้อมเทคโนโลยีที่ทันสมัย เพื่อให้การจัดการบัญชีของคุณเป็นเรื่องง่าย รวดเร็ว และมีประสิทธิภาพ</p>
+</div>
+  <h1>เอกสารรับรอง</h1>
+  
+  <div class="slider">
+      <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="slide-wrapper">
+          <div class="slides">
+              <div class="slide" onclick="openModal('Source/f1.png')"><img src="Source/f1.png" alt="เอกสาร 1"></div>
+              <div class="slide" onclick="openModal('Source/f2.png')"><img src="Source/f2.png" alt="เอกสาร 1"></div>
+              <div class="slide" onclick="openModal('Source/f3.png')"><img src="Source/f3.png" alt="เอกสาร 2"></div>
+              <div class="slide" onclick="openModal('Source/f4.png')"><img src="Source/f4.png" alt="เอกสาร 2"></div>
+          </div>
+      </div>
+      <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+  <div class="dots"></div>
 
+
+<div class="modal" id="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img id="modal-img">
+</div>
     </section>
 
     <section id="services" style="padding: 10px;height: auto;">
@@ -180,6 +201,7 @@
       <script src="./Script/ScriptMenu.js"></script>
       <script src="./Script/structure.js"></script>
       <script src="Script/pop-up.js"></script>
+      <script src="Script/s.js"></script> 
       
       <script>
       createNavbar();
