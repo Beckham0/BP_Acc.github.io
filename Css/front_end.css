@@ -18,11 +18,11 @@ section h1 {
   font-weight: bold;
 }
 
-#about { background: #35A8CB;color: #ffffff; }
+#about { background: #0F3F8A;color: #ffffff; }
 #services { background: rgb(255, 255, 255);color: #35A8CB; }
-#how { background: #35A8CB;;color: #ffffff; }
-#clients { background: #ffffff;color: #35A8CB }
-#contact { background: #35A8CB;color: #ffffff; }
+#how { background: #0F3F8A;;color: #ffffff; }
+#clients { background: #ffffff;color: #35A8CB; }
+#contact { background: #0F3F8A;color: #ffffff; }
 
 
 
@@ -34,7 +34,7 @@ section h1 {
 }
 
 .service-box {
-  background-color: #35A8CB;
+  background-color: #0F3F8A;
   color: white;
   border-radius: 20px;
   overflow: hidden;
@@ -45,6 +45,11 @@ section h1 {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  transition: transform 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงสมูท */
+}
+
+.service-box img:hover {
+  transform: scale(1.1); /* ขยายรูปภาพ 110% เมื่อ hover */
 }
 
 .service-box h1 {
@@ -80,15 +85,19 @@ section h1 {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  transition: transform 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงสมูท */
 }
 
+.service-boxx img:hover {
+  transform: scale(1.1); /* ขยายรูปภาพ 110% เมื่อ hover */
+}
 .service-boxx h1 {
   font-size: 30px;
   margin-top: 20px;
   font-weight: bold;
   margin-bottom: 0;
   line-height: 1.2;
-  color: #35A8CB;
+  color: #0F3F8A;
 }
 
 .service-boxx p {
@@ -107,14 +116,15 @@ section h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1500px;
   gap: 10px;
   padding: 20px;
+  margin: 0 auto;  
 }
 .gallery img {
   width: 100%;
   height: auto;
-  max-width: 250px;
+  max-width: 355px;
   border-radius: 5px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -131,3 +141,225 @@ section h1 {
 
 
 
+.ner {
+  width: auto;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap; /* ทำให้เป็นแถวเดียวเมื่อหน้าจอเล็กลง */
+}
+
+.left-section {
+  width: 30%;
+  background-color: #fcfcfc; /* สีพื้นหลังส่วนซ้าย */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-section {
+  width: 70%;
+  background-image: url('https://i.pinimg.com/736x/c5/21/81/c52181f5212108d03720d77bdc81955a.jpg'); /* ใส่ URL รูปภาพของคุณ */
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.logo img {
+  max-width: 357px;; /* ปรับขนาดโลโก้ตามต้องการ */
+}
+
+.text-content {
+  padding: 0px;
+  margin-top: 30px;
+}
+
+.text-content h2{
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: #0F3F8A;
+}
+
+.text-content h3{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: #0F3F8A;
+}
+
+.text-content p{
+  font-size: 30px;
+  margin-bottom: 0;
+  color: #35A8CB;
+  margin-top: 10px;
+}
+
+/* ปรับให้เป็นแถวเดียวเมื่อหน้าจอเล็กลง */
+@media (max-width: 768px) {
+  .left-section, .right-section {
+    width: 100%;
+    height: auto;
+  }
+  
+  .logo img {
+    max-width: 295px;/* ปรับขนาดโลโก้ตามต้องการ */
+  }
+
+  .left-section {
+    padding: 10px;
+    height: 50%;
+  }
+
+  .text-content {
+    padding: 0px;
+  }
+  
+  .text-content h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: #0F3F8A;
+  }
+  
+  .text-content h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: #0F3F8A;
+  }
+  
+  .text-content p{
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #35A8CB;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.Endner {
+  width: auto;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap; /* ทำให้เป็นแถวเดียวเมื่อหน้าจอเล็กลง */
+}
+
+.left-s {
+  width: 30%;
+  background-color: #0F3F8A; /* สีพื้นหลังส่วนซ้าย */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-s {
+  width: 70%;
+  background-image: url('https://i.pinimg.com/736x/c5/21/81/c52181f5212108d03720d77bdc81955a.jpg'); /* ใส่ URL รูปภาพของคุณ */
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.logo2 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.logo2 img {
+  max-width: 155px;/* ปรับขนาดโลโก้ตามต้องการ */
+}
+
+.t-content {
+  padding: 0px;
+  margin-top: 30px;
+}
+
+.t-content h2{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.t-content h3{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.t-content p{
+  font-size: 30px;
+  margin-bottom: 0;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+/* ปรับให้เป็นแถวเดียวเมื่อหน้าจอเล็กลง */
+@media (max-width: 768px) {
+  .left-s, .right-s {
+    width: 100%;
+    height: auto;
+  }
+  
+  .logo2 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+
+  .logo2 img {
+    max-width: 155px;/* ปรับขนาดโลโก้ตามต้องการ */
+  }
+
+  .left-s {
+    padding: 10px;
+    height: 50%;
+  }
+
+  .t-content {
+    padding: 0px;
+  }
+  
+  .t-content h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+  
+  .t-content h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+  
+  .t-content p{
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+}

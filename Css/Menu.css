@@ -18,7 +18,7 @@ body {
 }
 
 .start {
-  background-color: #35A8CB;
+  background-color: #0F3F8A;
   padding: 1px;
   width: 100%;
   display: flex;
@@ -31,7 +31,7 @@ margin: 10px auto;
 }
 
 .end{
-  background-color: #35A8CB;
+  background-color: #0F3F8A;
   padding: 2px;
   width: 100%;
   display: flex;
@@ -44,11 +44,13 @@ margin: 10px 80px;
 }
 
 .too {
-  background-color: #2d5eff;
+  background-color: #35A8CB;
   width: 100%;
-  height: 2px;
+  height: 3px;
   display: flex;
 }
+
+
 
 ***********************************************************************
  .nav-item {
@@ -85,20 +87,20 @@ margin: 10px 80px;
 
 .nav-link{
   font-weight: bolder !important;
-  color: #35A8CB !important;
+  color: #0F3F8A!important;
   border-radius: 50px;
 
 }
 
 .navbar-nav .nav-link.active {
-  background: #35A8CB !important;
+  background: #0F3F8A !important;
   color: white !important;
   border-radius: 50px;
  }
 
 .nav-link.active {
   color: #ffffff !important;
-  background-color: #35A8CB;
+  background-color: #0F3F8A;
   border-radius: 50px;
 }
 
@@ -133,7 +135,7 @@ margin: 10px 80px;
 
 
 .navbar-toggler {
-  color: #35A8CB !important;
+  color: #0F3F8A !important;
   background-color: #ffffff !important;
 }
 
