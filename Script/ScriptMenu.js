@@ -1,8 +1,9 @@
 function createNavbar() {
     const navbarHTML = `
-  <nav class="navbar navbar-expand-lg bg-body"style="z-index: 999; background-color: rgba(255, 255, 255, 0.53) !important;">
+<div id="navbar-container" class="navbar-expand-lg" style="z-index: 999 !important;height: 90px;">
+  <nav class="navbar navbar-expand-lg bg-body" style="z-index: 999; background-color: rgba(255, 255, 255, 0.53) !important;height: 90px;">
     <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html"><img src="Source/IMG_24855.png" width="150" height="100";" style="border-radius: 50px;"></a>
+    <a class="navbar-brand" href="./index.html"><img src="Source/IMG_24855.png" ;"="" style="border-radius: 170px;" width="100" height="70"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
 </button>
@@ -24,6 +25,7 @@ function createNavbar() {
       </div>
     </div>
   </nav>
+    </div>
     `;
     document.getElementById("navbar-container").innerHTML = navbarHTML;
   
