@@ -135,7 +135,6 @@ animation: 12s slide infinite linear;
   width: 100%;
   height: auto;
   max-width: 355px;
-
 }
 
 @media (max-width: 768px) {
