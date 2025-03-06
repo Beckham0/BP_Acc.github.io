@@ -10,18 +10,23 @@ section {
   text-align: center;
 }
 
-
+.container{
+  max-width: 1215px !important;
+}
 
 section h1 {
   font-size: clamp(40px,3.5vw,70px);
   margin-top: 18px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-#about { background: #0F3F8A;color: #ffffff; }
+#about { background: #0f3e8a;color: #ffffff; }
 #services { background: rgb(255, 255, 255);color: #0F3F8A; }
 #how { background: #0F3F8A;;color: #ffffff; }
 #clients { background: #ffffff;color: #0F3F8A; }
+#acc { background: #0F3F8A;color: #ffffff; }
+#promo { background: #ffffff;color: #0F3F8A; }
 #contact { background: #0F3F8A;color: #ffffff; }
 
 
@@ -36,16 +41,16 @@ section h1 {
 .service-box {
   background-color: #0F3F8A;
   color: white;
-  border-radius: 20px;
-  overflow: hidden;
+  border-radius:20px;
+  overflow:hidden;
   text-align: center;
 }
 
 .service-box img {
   width: 100%;
-  height: 250px;
+  height: 201px;
   object-fit: cover;
-  transition: transform 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงสมูท */
+  transition:transform 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงสมูท */
 }
 
 .service-box img:hover {
@@ -54,7 +59,7 @@ section h1 {
 
 .service-box h1 {
   font-size: 27px;
-  margin-top: 20px;
+  margin-top: 19px;
   font-weight: bold;
   margin-bottom: 0;
   line-height: 1.2;
@@ -62,13 +67,63 @@ section h1 {
 }
 
 .service-box p {
-  padding: 20px 30px;
-  font-size: 20px;
+  padding:5px 30px;
+  font-size: 17px;
   margin-top: 0;
   margin-bottom: 0;
-    line-height: 1.2;
+  line-height: 1.2;
   color: white;
   text-align: start;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 1559px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap:17px;
+    padding:0 40px;
+  }
+
+  .service-box {
+    font-size: 27px;
+    margin-top: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: white;
+  }
+  
+  .service-box img {
+    width: 100%;
+    height: 189px;
+    object-fit: cover;
+    transition:transform 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงสมูท */
+  }
+  
+  .service-box img:hover {
+    transform: scale(1.1); /* ขยายรูปภาพ 110% เมื่อ hover */
+  }
+  
+  .service-box h1 {
+    font-size: 27px;
+    margin-top: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: white;
+  }
+  
+  .service-box p {
+    padding:10px 30px;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white;
+    text-align: start;
+  }
 }
 
 
@@ -83,17 +138,17 @@ section h1 {
 
 .service-boxx img {
   width: 100%;
-  height: 250px;
+  height: 197px;
   object-fit: cover;
-  transition: transform 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงสมูท */
+  transition:transform 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงสมูท */
 }
 
 .service-boxx img:hover {
   transform: scale(1.1); /* ขยายรูปภาพ 110% เมื่อ hover */
 }
 .service-boxx h1 {
-  font-size: 30px;
-  margin-top: 20px;
+  font-size: 29px;
+  margin-top: 11px;
   font-weight: bold;
   margin-bottom: 0;
   line-height: 1.2;
@@ -101,13 +156,63 @@ section h1 {
 }
 
 .service-boxx p {
-  padding: 20px 30px;
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding:10px 30px;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 0;
     line-height: 1.2;
-  color: #0F3F8A;
-  text-align: start;
+    color: #0F3F8A;
+    text-align: start;
+}
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 1559px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap:17px;
+    padding:0 40px;
+  }
+
+  .service-boxx {
+    font-size: 29px;
+    margin-top: 11px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: white;
+  }
+  
+  .service-boxx img {
+    width: 100%;
+    height: 189px;
+    object-fit: cover;
+    transition:transform 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงสมูท */
+  }
+  
+  .service-boxx img:hover {
+    transform: scale(1.1); /* ขยายรูปภาพ 110% เมื่อ hover */
+  }
+  
+  .service-boxx h1 {
+    font-size: 29px;
+    margin-top: 11px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: #0F3F8A;
+  }
+  
+  .service-boxx p {
+    padding:
+    10px 30px;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 17px;
+        line-height: 1.2;
+        color: #0F3F8A;
+        text-align: start;
+  }
 }
 
 
@@ -181,6 +286,8 @@ animation: 12s slide infinite linear;
   object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  padding: 72px;
+  border-radius: 170px;
 }
 
 /* ทำให้ภาพแรกแสดงก่อน */
@@ -190,8 +297,8 @@ animation: 12s slide infinite linear;
 
 .logo {
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 50px;
+  margin-bottom: -30px;
+  margin-top: 139px;
 }
 
 .logo img {
@@ -228,6 +335,14 @@ animation: 12s slide infinite linear;
 
 /* ปรับให้เป็นแถวเดียวเมื่อหน้าจอเล็กลง */
 @media (max-width: 768px) {
+
+  .ner {
+    width: auto;
+    height: 508px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .left-section, .right-section {
     width: 100%;
     height: auto;
@@ -237,6 +352,12 @@ animation: 12s slide infinite linear;
     max-width: 295px;/* ปรับขนาดโลโก้ตามต้องการ */
   }
 
+  .logo {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
   .left-section {
     padding: 10px;
     height: 50%;
@@ -244,10 +365,11 @@ animation: 12s slide infinite linear;
 
   .text-content {
     padding: 0px;
+    margin-top: 0;
   }
   
   .text-content h2{
-    font-size: 40px;
+    font-size: 46px;
     font-weight: bold;
     margin-bottom: 0;
     line-height: 1.2;
@@ -255,7 +377,7 @@ animation: 12s slide infinite linear;
   }
   
   .text-content h3{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     margin-bottom: 0;
     line-height: 1.2;
@@ -263,9 +385,14 @@ animation: 12s slide infinite linear;
   }
   
   .text-content p{
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 0;
-    color: #35A8CB;
+    color: #0F3F8A;
+  }
+
+  .slideshow img {
+    padding: 12px;
+    border-radius: 30px;
   }
 }
 
@@ -294,10 +421,17 @@ animation: 12s slide infinite linear;
 }
 
 .right-s {
-  width: 70%;
+  width: 40%;
   background-image: url('https://beckham0.github.io/Source/IMG_112.png'); /* ใส่ URL รูปภาพของคุณ */
   background-size: cover;
   background-position: center;
+  box-sizing: border-box;
+}
+
+.merde-s {
+  width: 30%;
+  background-color: #0F3F8A; /* สีพื้นหลังส่วนซ้าย */
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -308,7 +442,7 @@ animation: 12s slide infinite linear;
 }
 
 .logo2 img {
-  max-width: 155px;/* ปรับขนาดโลโก้ตามต้องการ */
+  max-width: 202px;/* ปรับขนาดโลโก้ตามต้องการ */
 }
 
 .t-content {
@@ -336,14 +470,20 @@ animation: 12s slide infinite linear;
   font-size: 30px;
   margin-bottom: 0;
   color: #ffffff;
-  margin-top: 50px;
 }
 
 /* ปรับให้เป็นแถวเดียวเมื่อหน้าจอเล็กลง */
 @media (max-width: 768px) {
-  .left-s, .right-s {
+
+  .Endner {
+    width: auto;
+    height: auto;
+  }
+
+  .left-s,.merde-s, .right-s {
     width: 100%;
     height: auto;
+    padding: 0px;
   }
   
   .logo2 {
@@ -353,7 +493,7 @@ animation: 12s slide infinite linear;
   }
 
   .logo2 img {
-    max-width: 155px;/* ปรับขนาดโลโก้ตามต้องการ */
+    max-width: 178px;/* ปรับขนาดโลโก้ตามต้องการ */
   }
 
   .left-s {
@@ -393,32 +533,99 @@ animation: 12s slide infinite linear;
 
 
 
-
-
 .about-us {
-  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1223px;
+  margin:auto;
+  gap:90px;
+  padding:70px 0px;
+
+  background-image: url('Source/IMG_2.JPG');
+  background-size: cover; /* ปรับภาพให้พอดีกับพื้นที่ */
+  background-position: center; /* จัดตำแหน่งภาพ */
+  background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+}
+.text-section {
+  flex: 3;
+  padding: 20px;
+}
+.text-section h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 31px;
+  text-align: center;
+  margin-top: 34px;
+  margin-right: 158px;
 }
 
-.about-us p{
-  font-size: 1.7rem;
-  margin: 10px 20px;
-}
-.subtitle {
-  font-size: 1.7rem;
-  margin: 15px  20px;
+.text-section h3 {
+  font-size: 36px;
+  margin-bottom: 23px;
+  text-align: start;
   font-weight: bold;
 }
+
+.text-section p {
+  font-size: 25px;
+  line-height: 1.6;
+  text-align: start;
+}
+.slider-section {
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.slider {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.slider-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 10px;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
 .slider {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 0 50px;
+  padding: 0 0px;
+  width: 477px;
+  height: 465px;
 }
 .slide-wrapper {
   display: flex;
   overflow: hidden;
-  width: 80%;
+  width: 90%;
   max-width: 800px;
 }
 .slides {
@@ -430,9 +637,8 @@ animation: 12s slide infinite linear;
 }
 .slide img {
   width: 100%;
-  max-width: 269px;
+  max-width: 332px;
   height: auto;
-  padding: 10px;
 }
 .arrow {
   transform: translateY(-50%);
@@ -451,40 +657,104 @@ animation: 12s slide infinite linear;
 }
 .dots {
   margin-top: 15px;
+  text-align: center;
+  margin-right: 20px;
 }
 .dot {
-  height: 10px;
-  width: 10px;
-  margin: 5px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  opacity: 0.5;
+height: 10px;
+width: 10px;
+margin: 5px;
+background-color: white;
+border-radius: 50%;
+display: inline-block;
+cursor: pointer;
+opacity: 0.5;
 }
 .active {
-  opacity: 1;
+opacity: 1;
 }
 .modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  align-items: center;
-  justify-content: center;
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.8);
+align-items: center;
+justify-content: center;
 }
 .modal img {
-  max-width: 90%;
-  max-height: 80%;
+max-width: 90%;
+max-height: 80%;
 }
 .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 50px;
-  color: white;
-  cursor: pointer;
+position: absolute;
+top: 20px;
+right: 30px;
+font-size: 50px;
+color: white;
+cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+      .about-us {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin:auto;
+        gap:0px;
+        padding:
+        0 10px;
+        margin-top: 70px;
+      }
+
+  .text-section h2 {
+font-size: 53px;
+margin-bottom: 12px;
+text-align: center;
+margin-top: 0px;
+margin-right: 0px;
+
+}
+
+.text-section h3 {
+  font-size: 20px;
+  margin-bottom: 23px;
+  text-align: center;
+}
+
+.text-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.slider-section {
+  margin-top: 0px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 0px;
+    width: 406px;
+    height: 316px;
+}
+
+.slide img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+.dots {
+  margin-top: 15px;
+  text-align: center;
+  margin-right: 20px;
+}
 }

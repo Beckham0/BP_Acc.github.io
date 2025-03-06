@@ -17,11 +17,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
  
 </head>
 <body > 
-  <div class="too"></div>
   <div class="start">
     <h1 style="display: inline;margin: auto;color: white;">บริษัท บี พี แอคเคาท์ เซอร์วิส กรุ๊ป จำกัด   </h1>
   </div>
@@ -29,6 +28,7 @@
 
 
     <section id="1" style="padding: 0px;height: auto;">
+
 
       <div class="ner">
         <div class="left-section">
@@ -53,38 +53,44 @@
 
     <section id="about" style="padding: 0px;height: auto;">
 <br>
-<div class="about-us">
-  <h1 style="margin-top: 15px;">เกี่ยวกับเรา</h1>
-  <div class="subtitle">"สำนักงานบัญชีรุ่นใหม่ ใส่ใจธุรกิจยุคใหม่"</div>
-  <p>บริษัท บี พี แอคเคาท์ เซอร์วิส กรุ๊ป จำกัด คือสำนักงานบัญชีที่พร้อมให้บริการด้วยความเข้าใจอย่างลึกซึ้งในธุรกิจยุคใหม่ ด้วยทีมงานมืออาชีพมากประสบการณ์ พร้อมเทคโนโลยีที่ทันสมัย เพื่อให้การจัดการบัญชีของคุณเป็นเรื่องง่าย รวดเร็ว และมีประสิทธิภาพ</p>
-</div>
-  <h1>เอกสารรับรอง</h1>
-  
-  <div class="slider">
-      <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
-      <div class="slide-wrapper">
-          <div class="slides">
-              <div class="slide" onclick="openModal('Source/f1.png')"><img src="Source/f1.png" alt="เอกสาร 1"></div>
-              <div class="slide" onclick="openModal('Source/f2.png')"><img src="Source/f2.png" alt="เอกสาร 1"></div>
-              <div class="slide" onclick="openModal('Source/f3.png')"><img src="Source/f3.png" alt="เอกสาร 2"></div>
-              <div class="slide" onclick="openModal('Source/f4.png')"><img src="Source/f4.png" alt="เอกสาร 2"></div>
-          </div>
+
+  <div class="about-us">
+    <div class="text-section">
+      <div class="pop-up "><h2>เกี่ยวกับเรา</h2></div>
+      <div class="pop-up "><h3>"สำนักงานบัญชีรุ่นใหม่ ใส่ใจธุรกิจยุคใหม่"</h3></div>
+        <p>บริษัท บี พี แอคเคาท์ เซอร์วิส กรุ๊ป จำกัด คือสำนักงานบัญชีที่พร้อมให้บริการด้วยความเข้าใจอย่างลึกซึ้งในธุรกิจยุคใหม่ ด้วยทีมงานมืออาชีพมากประสบการณ์ พร้อมเทคโนโลยีที่ทันสมัย เพื่อให้การจัดการบัญชีของคุณเป็นเรื่องง่าย รวดเร็ว และมีประสิทธิภาพ</p>
+    </div>
+    
+    <div class="slider-section">
+      <div class="pop-up "><h2>เอกสารรับรอง</h2></div>
+        <div class="slider">
+            <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slide-wrapper">
+                <div class="slides">
+                    <div class="slide" onclick="openModal('Source/f1.png')"><img src="Source/f1.png" alt="เอกสาร 1"></div>
+                    <div class="slide" onclick="openModal('Source/f2.png')"><img src="Source/f2.png" alt="เอกสาร 1"></div>
+                    <div class="slide" onclick="openModal('Source/f3.png')"><img src="Source/f3.png" alt="เอกสาร 2"></div>
+                    <div class="slide" onclick="openModal('Source/f4.png')"><img src="Source/f4.png" alt="เอกสาร 2"></div>
+                </div>
+            </div>
+            <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="dots"></div>
+      
+      
+      <div class="modal" id="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modal-img">
       </div>
-      <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
-  </div>
-  <div class="dots"></div>
-
-
-<div class="modal" id="modal" onclick="closeModal()">
-  <span class="close">&times;</span>
-  <img id="modal-img">
+    </div>
 </div>
+<br>
+<br>
     </section>
 
     <section id="services" style="padding: 10px;height: auto;">
       <br><br>
-      <h1>บริการเรา</h1>
-      <br>
+      <div class="pop-up "><h1>บริการเรา</h1></div>
       <div class="container">
         <div class="service-box">
             <img src="Source/b.JPG" alt="">
@@ -126,8 +132,7 @@
 
     <section id="how" style="padding: 10px;height: auto;">
       <br>
-      <h1>ทำไมต้องเลือก บี พี แอคเคาท์ เซอร์วิส กรุ๊ป?</h1>
-      <br><br>
+      <div class="pop-up "><h1>ทำไมต้องเลือก บี พี แอคเคาท์ เซอร์วิส กรุ๊ป?</h1></div>
       <div class="container">
         <div class="service-boxx">
             <img src="Source/1.JPG" alt="">
@@ -153,18 +158,16 @@
     </section>
 
     <section id="clients" style="height: auto;">
-      <h1>ลูกค้าเรา</h1>
+      <div class="pop-up "><h1>ลูกค้าเรา</h1></div>
       <br>
 
       <div class="gallery">
       <div class="gallery-slide">
-        <img src="Source/1.JPG" alt="Image 1">
         <img src="Source/2.JPG" alt="Image 2">
         <img src="Source/3.JPG" alt="Image 3">
         <img src="Source/4.JPG" alt="Image 4">
         <img src="Source/7.JPG" alt="Image 7">
         <img src="Source/8.JPG" alt="Image 8">
-        <img src="Source/1.JPG" alt="Image 1">
         <img src="Source/2.JPG" alt="Image 2">
         <img src="Source/3.JPG" alt="Image 3">
         <img src="Source/4.JPG" alt="Image 4">
@@ -179,12 +182,33 @@
     </section>
 
 
-    <section id="contact" style="padding: 0;height: 450px;">
+    <section id="acc" style="height: auto;">
+      <div class="pop-up "><h1>ความประทับใจ ลูกค้า</h1></div>
+      <br>
+
+
+
+      <br>
+
+    </section>
+
+    <section id="promo" style="height: auto;">
+      <div class="pop-up "><h1>แพ็กเกจ และ ราคา</h1></div>
+      <br>
+
+
+
+      <br>
+
+    </section>
+
+
+    <section id="contact" style="padding: 0;height: auto;">
 
       <div class="Endner">
         <div class="right-s">
         </div>
-        <div class="left-s">
+        <div class="merde-s">
           <div class="t-content">
             <h2>ติดต่อสอบถามฟรี</h2>
             <h3>B P Account</h3>
@@ -193,6 +217,28 @@
               <img src="Source/IMG_2483.jpg" alt="BP Account Logo"> </div>
           </div>
         </div>
+        <div class="left-s ">
+          <div class="footer-column-3">
+            <h1>CONTACT</h1>
+            <div class="top_column">
+            <a href="https://www.facebook.com/share/1XyhMyJVzy/?mibextid=wwXIfr"><div class="column" style="background-color: #4267B2;width: 340px;height: 65px;">
+              <div class="item"><img src="Source/facebook1.png" alt="" style="width: 50px;height: 39px;"></div>
+              <div class="item"><h2>facebook</h2><h3> บริษัท บี พี แอคเคาท์ เซอร์วิส กรุ๊ป จำกัด</h3></div></div>
+            </div></a>
+            <a href="https://line.me/ti/p/mdboY3IOZG"><div class="column" style="background-color: #39CD00;width: 340px;height: 65px;">
+              <div class="item"><img src="Source/line.png" alt="" style="width: 50px;height: 50px;margin-left: 18px;"></div>
+              <div class="item"><h2>Add LINE</h2><h3>BP Account</h3></div>
+            </div></a>
+            <a href="091-1629156"><div class="column" style="background-color: #00B771;width: 340px;height: 65px;">
+              <div class="item"><img src="Source/mobile.png" alt="" style="width: 45px;height: 45px;margin-left: 18px;"></div>
+              <div class="item"><h2>Tel. </h2><h3>091-1629156</h3></div>
+            </div></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox"><div class="column" style="background-color: #FFF;width: 340px;height: 65px;">
+              <div class="item"><img src="Source/communication.png" alt="" style="width: 45px;height: 45px;margin-left: 18px;"></div>
+              <div class="item"><h2 style="color: black;">Email</h2><h3 style="color: black;">boonpong3140@gmail.com</h3></div>
+            </div></a>
+            <br>
+          </div>
       </div>
       
 
@@ -209,6 +255,8 @@
       <script src="./Script/structure.js"></script>
       <script src="Script/s.js"></script>
       <script src="Script/ner.js"></script> 
+      <script src="Script/boxx.js"></script> 
+      <script src="Script/pop-up.js"></script>
 
       
       <script>

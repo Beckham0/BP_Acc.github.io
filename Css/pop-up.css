@@ -1,0 +1,26 @@
+
+.pop-up {
+    transform: scale(0.3); /* ย่อก่อนเริ่ม */
+    opacity: 1;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
+}
+
+.pop-up.show1 {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
+
+
+.pop-up_down {
+    opacity: 0;
+   
+    transform:translate3d(0,100%,0);
+    
+}
+
+.pop-up_down.show1 {
+     transition: transform 0.9s ease-out, opacity 1s ease-out ;
+    opacity: 1;
+    transition-delay: 50ms; 
+    transform:none;
+}
