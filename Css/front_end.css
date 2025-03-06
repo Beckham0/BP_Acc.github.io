@@ -237,9 +237,9 @@ white-space: nowrap;
 animation: 12s slide infinite linear;
 }
 .gallery img {
-  width: 100%;
+  width: 143%;
   height: auto;
-  max-width: 355px;
+  max-width: 594px;
 }
 
 @media (max-width: 768px) {
@@ -414,14 +414,14 @@ animation: 12s slide infinite linear;
 }
 
 .left-s {
-  width: 30%;
+  width: 20%;
   background-color: #0F3F8A; /* สีพื้นหลังส่วนซ้าย */
   padding: 20px;
   box-sizing: border-box;
 }
 
 .right-s {
-  width: 40%;
+  width: 60%;
   background-image: url('https://beckham0.github.io/Source/IMG_112.png'); /* ใส่ URL รูปภาพของคุณ */
   background-size: cover;
   background-position: center;
@@ -429,7 +429,7 @@ animation: 12s slide infinite linear;
 }
 
 .merde-s {
-  width: 30%;
+  width: 20%;
   background-color: #0F3F8A; /* สีพื้นหลังส่วนซ้าย */
   padding: 20px;
   box-sizing: border-box;
@@ -511,6 +511,7 @@ animation: 12s slide infinite linear;
     margin-bottom: 0;
     line-height: 1.2;
     color: #ffffff;
+    margin-top: 105px;
   }
   
   .t-content h3{

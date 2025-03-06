@@ -49,6 +49,13 @@ function createfooter() {
           <div class="item"><h1>Google Map</h1><h1>ตำเเหน่งที่ตั้ง บริษัท</h1></div></div>
     </div></a>
   </div>
+
+       <div class="footer-column-4">
+            <h1>LOCATION</h1>
+            <p>บริษัท บี พี แอคเคาท์ เซอร์วิส  กรุ๊ป จำกัดเลขที่ 148/1 สุขุมวิท 22 แขวงคลองเตย เขตคลองเตย กทม.10110 Tax ID 0105566166520</p>
+            <p>B P Account  Service  Group Co., Ltd148/1 Sukhumvit 22, Klongtoie ,Klongtoie District ,Bangkok 10110</p>
+            <br>
+          </div>
     <div class="footer-column-2">
       <h1>MENU</h1>
       <div class="top_a">
