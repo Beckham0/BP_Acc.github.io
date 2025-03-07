@@ -13,3 +13,6 @@ const slider = document.querySelector('.slider');
 
             slider.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
+
+
+

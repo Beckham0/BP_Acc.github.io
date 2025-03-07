@@ -1,0 +1,131 @@
+
+
+.wra {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    margin-left: 50px;
+  }
+
+.wra i {
+    height: 50px;
+    width: 50px;
+    background-color: #35A8CB;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.wra i img {
+width: 50%;
+height: 50%;
+margin-bottom: 7px;
+}
+
+.wra i:first-child {
+    left: -63px;
+}
+
+.wra i:last-child {
+    right: -57px;
+}
+
+.wra .car {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.car ::-webkit-scrollbar {
+    display: none;
+}
+
+.car :where(.cardes, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.car.dragging .cardes {
+    cursor: grab;
+    user-select: none;
+}
+
+.car .cardes {
+ scroll-snap-align: start;
+ height: 342px;
+ list-style: none;
+ background-color: aliceblue;
+ border-radius: 10px;
+ display: flex;
+ cursor: pointer;
+ padding-bottom: 15px;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.car .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.cardes .img img{
+ width: 100%;
+ height: 175px;
+ object-fit: cover;
+ border-radius: 2%;
+ border: 0px solid #fff;
+}
+
+.cardes h2 {
+    font-weight: 500;
+    font-size: 35px;
+    margin:  8px 0 1px;
+    color: #0f3e8a;
+    font-weight: bold;
+}
+
+.cardes span {
+    color: #0f3e8a;
+    font-size: 17px;
+    margin:12px;
+}
+
+
+@media (max-width: 900px) {
+    .wra .car {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .wra {
+        max-width: 1100px;
+        width: 100%;
+        position: relative;
+        margin-left: 0px;
+      }
+    .wra .car {
+        grid-auto-columns: 100%;
+    }
+
+    .wra i:last-child {
+        right: -15px;
+    }
+
+    .wra i:first-child {
+        left: -16px;
+    }
+}

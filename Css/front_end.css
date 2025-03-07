@@ -129,92 +129,6 @@ section h1 {
 
 
 
-.service-boxx {
-  background-color: #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
-  text-align: center;
-}
-
-.service-boxx img {
-  width: 100%;
-  height: 197px;
-  object-fit: cover;
-  transition:transform 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงสมูท */
-}
-
-.service-boxx img:hover {
-  transform: scale(1.1); /* ขยายรูปภาพ 110% เมื่อ hover */
-}
-.service-boxx h1 {
-  font-size: 29px;
-  margin-top: 11px;
-  font-weight: bold;
-  margin-bottom: 0;
-  line-height: 1.2;
-  color: #0F3F8A;
-}
-
-.service-boxx p {
-  padding:10px 30px;
-    font-size: 17px;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.2;
-    color: #0F3F8A;
-    text-align: start;
-}
-@media (max-width: 768px) {
-
-  .container {
-    max-width: 1559px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap:17px;
-    padding:0 40px;
-  }
-
-  .service-boxx {
-    font-size: 29px;
-    margin-top: 11px;
-    font-weight: bold;
-    margin-bottom: 0;
-    line-height: 1.2;
-    color: white;
-  }
-  
-  .service-boxx img {
-    width: 100%;
-    height: 189px;
-    object-fit: cover;
-    transition:transform 0.3s ease; /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงสมูท */
-  }
-  
-  .service-boxx img:hover {
-    transform: scale(1.1); /* ขยายรูปภาพ 110% เมื่อ hover */
-  }
-  
-  .service-boxx h1 {
-    font-size: 29px;
-    margin-top: 11px;
-    font-weight: bold;
-    margin-bottom: 0;
-    line-height: 1.2;
-    color: #0F3F8A;
-  }
-  
-  .service-boxx p {
-    padding:
-    10px 30px;
-        font-size: 16px;
-        margin-top: 0;
-        margin-bottom: 17px;
-        line-height: 1.2;
-        color: #0F3F8A;
-        text-align: start;
-  }
-}
-
 
 
 @keyframes slide{
@@ -743,7 +657,7 @@ margin-right: 0px;
     justify-content: center;
     position: relative;
     padding: 0 0px;
-    width: 406px;
+    width: 400px;
     height: 316px;
 }
 
