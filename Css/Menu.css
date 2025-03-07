@@ -196,10 +196,15 @@ margin: 10px 80px;
 }
 .footer-column-1 ,
 .footer-column-2 ,
-.footer-column-3,
 .footer-column-4 {
   flex: 1;
   min-width: 400px;
+  margin: 0px;
+}
+
+.footer-column-3 {
+  flex: 1;
+  min-width: 220px;
   margin: 0px;
 }
 
@@ -325,7 +330,7 @@ margin: 10px 80px;
 }
 
 .footer-column-3 .column h3 {
-  font-size: 15px;
+  font-size: 10px;
   color: #ffffff;
   margin-bottom: 0;
   text-align: start;
