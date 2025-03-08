@@ -29,7 +29,7 @@ margin-bottom: 7px;
 }
 
 .wra i:first-child {
-    left: -63px;
+    left: -61px;
 }
 
 .wra i:last-child {
@@ -105,7 +105,7 @@ margin-bottom: 7px;
 
 @media (max-width: 900px) {
     .wra .car {
-        grid-auto-columns: calc((100% / 2) - 9px);
+        grid-auto-columns: calc((100% / 2) - 10px);
     }
 }
 
@@ -117,9 +117,11 @@ margin-bottom: 7px;
         position: relative;
         margin-left: 0px;
       }
+
     .wra .car {
         grid-auto-columns: 100%;
-    }
+        gap: 0px;
+      }
 
     .wra i:last-child {
         right: -15px;

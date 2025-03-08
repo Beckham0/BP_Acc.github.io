@@ -198,7 +198,7 @@ margin: 10px 80px;
 .footer-column-2 ,
 .footer-column-4 {
   flex: 1;
-  min-width: 400px;
+  min-width: 380px;
   margin: 0px;
 }
 

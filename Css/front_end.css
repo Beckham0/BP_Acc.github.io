@@ -387,7 +387,7 @@ animation: 12s slide infinite linear;
 }
 
 /* ปรับให้เป็นแถวเดียวเมื่อหน้าจอเล็กลง */
-@media (max-width: 768px) {
+@media (max-width: 930px) {
 
   .Endner {
     width: auto;
