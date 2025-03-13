@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Side Scroll Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box; background: #0A4DA2; }
+        .carousel-container { display: flex; align-items: center; justify-content: center; margin-top: 50px; position: relative; }
+        .carousel { display: flex; overflow: hidden; width: 900px; }
+        .carousel-track { display: flex; transition: transform 0.5s ease-in-out; }
+        .card { min-width: 300px; margin: 0 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 20px; overflow: hidden; background: aliceblue; }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 10px; color: #083E8D; text-align: center; font-size: 20px; font-weight: bold; }
+
+        button { background: #35A8CB; color: #fff; border: none; padding: 10px 15px; cursor: pointer; border-radius: 50%; }
+        button:hover { background: #083E8D; }
+
+        .prev2, .next2 { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; border: none; background: #35A8CB; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+        .prev2 { left: 5px; }
+        .next2 { right: 5px; }
+
+        .dots-container { position: absolute; bottom: -33px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; }
+        .dot { width: 12px; height: 12px; border-radius: 50%; background-color: #7a9bc7; cursor: pointer; }
+        .dot.active { background-color: #fff; }
+
+        @media (max-width: 768px) {
+            .carousel { width: 300px; }
+            .card { min-width: 100%; }
+            button { padding: 10px 15px; font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <button class="prev2">⬅</button>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="card">
+                    <img src="https://via.placeholder.com/600x200" alt="">
+                    <div class="card-content">ทีมงานมืออาชีพ</div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/600x200" alt="">
+                    <div class="card-content">บริการวางแผนภาษีที่มีประสิทธิภาพ</div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/600x200" alt="">
+                    <div class="card-content">ช่วยให้คุณประหยัดภาษี</div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/600x200" alt="">
+                    <div class="card-content">ช่วยให้คุณประหยัดภาษี</div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/600x200" alt="">
+                    <div class="card-content">ช่วยให้คุณประหยัดภาษี</div>
+                </div>
+            </div>
+        </div>
+        <button class="next2">➡</button>
+        <div class="dots-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const prevButton = document.querySelector('.prev2');
+        const nextButton = document.querySelector('.next2');
+        const dots = document.querySelectorAll('.dot');
+        const cardWidth = document.querySelector('.card').offsetWidth + 20;
+        let currentPosition = 0;
+        let currentIndex = 0;
+
+        function updateDots(index) {
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+        }
+
+        nextButton.addEventListener('click', () => {
+            if (currentPosition > -(track.scrollWidth - cardWidth * 2)) {
+                currentPosition -= cardWidth;
+                track.style.transform = `translateX(${currentPosition}px)`;
+                currentIndex = Math.min(currentIndex + 1, dots.length - 1);
+                updateDots(currentIndex);
+            }
+        });
+
+        prevButton.addEventListener('click', () => {
+            if (currentPosition < 0) {
+                currentPosition += cardWidth;
+                track.style.transform = `translateX(${currentPosition}px)`;
+                currentIndex = Math.max(currentIndex - 1, 0);
+                updateDots(currentIndex);
+            }
+        });
+    </script>
+</body>
+</html>
+
