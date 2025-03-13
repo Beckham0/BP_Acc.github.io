@@ -172,40 +172,53 @@
     .card-content p { padding:0 15px;color: #083E8D; font-size: 15px;  margin-top: 2px; margin-bottom: 10px;}
     button { background: #35A8CB; color: #fff; border: none; padding: 5px 5px; cursor: pointer; border-radius: 50%; margin: 0 10px; }
 
-    .carousel2 { display: flex; overflow: hidden; width: 847px; height: 390px;}
-    .card-ct2 { min-width: 807px; margin: 10px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 20px; overflow: hidden; background: aliceblue }
-    .card-ct2 img { width: 100%; height: 200px; object-fit: cover; }
       /* Responsive adjustments */
       @media (max-width: 768px) {
         .card-ct { min-width: 360px; margin: 10px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 20px; overflow: hidden; background: aliceblue }
-        .card-ct2 { min-width: 360px; margin: 10px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 20px; overflow: hidden; background: aliceblue }
         .carousel { width: 400px; }
           .prev2 {position: absolute; z-index: 9999; padding:12px;font-size: 15px;margin:0 1px;  left: 10px;}
           .next2 {position: absolute; z-index: 9999; padding:12px;font-size: 15px;margin:0 1px;  right: 10px;}
       }
   </style>
   <script>
-      document.querySelectorAll('.carousel-container').forEach(container => {
-          const track = container.querySelector('.carousel-track');
-          const prevButton = container.querySelector('.prev2');
-          const nextButton = container.querySelector('.next2');
-          const cardWidth = container.querySelector('.card-ct').offsetWidth + 40;
-          let currentPosition = 0;
+document.querySelectorAll('.carousel-container').forEach(container => {
+    const track = container.querySelector('.carousel-track');
+    const prevButton = container.querySelector('.prev2');
+    const nextButton = container.querySelector('.next2');
+    const cardWidth = container.querySelector('.card-ct').offsetWidth + 40;
+    let currentPosition = 0;
+    
+    // ฟังก์ชันตรวจสอบจำนวนการ์ดที่แสดงตามขนาดหน้าจอ
+    const getVisibleCards = () => {
+        if (window.innerWidth >= 1200) return 3;
+        if (window.innerWidth >= 768) return 3;
+        if (window.innerWidth >= 480) return 2;
+        return 1;
+    };
 
-          nextButton.addEventListener('click', () => {
-              if (currentPosition > -(track.scrollWidth - cardWidth * 3)) {
-                  currentPosition -= cardWidth;
-                  track.style.transform = `translateX(${currentPosition}px)`;
-              }
-          });
+    let visibleCards = getVisibleCards();
+    
+    // อัปเดตจำนวนการ์ดเมื่อเปลี่ยนขนาดหน้าจอ
+    window.addEventListener('resize', () => {
+        visibleCards = getVisibleCards();
+        currentPosition = 0;
+        track.style.transform = `translateX(${currentPosition}px)`;
+    });
 
-          prevButton.addEventListener('click', () => {
-              if (currentPosition < 0) {
-                  currentPosition += cardWidth;
-                  track.style.transform = `translateX(${currentPosition}px)`;
-              }
-          });
-      });
+    nextButton.addEventListener('click', () => {
+        if (currentPosition > -(track.scrollWidth - cardWidth * visibleCards)) {
+            currentPosition -= cardWidth;
+            track.style.transform = `translateX(${currentPosition}px)`;
+        }
+    });
+
+    prevButton.addEventListener('click', () => {
+        if (currentPosition < 0) {
+            currentPosition += cardWidth;
+            track.style.transform = `translateX(${currentPosition}px)`;
+        }
+    });
+});
   </script>
 
     </section>
@@ -309,18 +322,11 @@
         const nextButton = document.querySelector('.next-too');
         const cardWidth = document.querySelector('.card-too').offsetWidth + 40;
         let currentPosition = 0;
-        let currentIndex = 0;
-
-function updateDots(index) {
-    dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
-}
 
         nextButton.addEventListener('click', () => {
             if (currentPosition > -(track.scrollWidth - cardWidth * 2)) {
                 currentPosition -= cardWidth;
                 track.style.transform = `translateX(${currentPosition}px)`;
-                currentIndex = Math.min(currentIndex + 1, dots.length - 1);
-                updateDots(currentIndex);
             }
         });
 
@@ -328,8 +334,6 @@ function updateDots(index) {
             if (currentPosition < 0) {
                 currentPosition += cardWidth;
                 track.style.transform = `translateX(${currentPosition}px)`;
-                currentIndex = Math.max(currentIndex - 1, 0);
-                updateDots(currentIndex);
             }
         });
     </script>
