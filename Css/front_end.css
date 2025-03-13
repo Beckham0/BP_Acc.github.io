@@ -4,6 +4,15 @@ a {
   text-decoration: none !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 480px) {
+  .card-ct { min-width: 300px; }
+  .carousel { width: 320px; }
+}
+
 section {
   height: 100vh;
   padding: 100px 0;
