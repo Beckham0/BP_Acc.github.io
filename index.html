@@ -137,7 +137,7 @@
       <button class="prev2"><img src="Source/left-arrow.png" alt="" style="width: 1.5rem; margin-right: 5px;"></button>
       <div class="carousel">
           <div class="carousel-track">
-              <div class="card-ct">
+              <div class="card-ct" style="margin-left: 10px;">
                   <img src="Source/1.JPG" alt="">
                   <div class="card-content"><h2>ทีมงานมืออาชีพ</h2>
                     <p>ทีมงานของเราประกอบด้วยผู้เชี่ยวชาญด้านบัญชีและภาษีที่มีประสบการณ์และความรู้ความสามารถ พร้อมให้บริการคุณอย่างเต็มที่</p></div>
@@ -176,8 +176,8 @@
       @media (max-width: 768px) {
         .card-ct { min-width: 360px; margin: 10px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 20px; overflow: hidden; background: aliceblue }
         .carousel { width: 400px; }
-          .prev2 {position: absolute; z-index: 9999; padding:12px;font-size: 15px;margin:0 1px;  left: 10px;}
-          .next2 {position: absolute; z-index: 9999; padding:12px;font-size: 15px;margin:0 1px;  right: 10px;}
+          .prev2 {position: absolute; z-index: 9999; padding:12px;font-size: 15px;margin:0 1px; left: 7px;}
+          .next2 {position: absolute; z-index: 9999; padding:12px;font-size: 15px;margin:0 1px; right: 4px;}
       }
   </style>
   <script>
@@ -191,7 +191,6 @@ document.querySelectorAll('.carousel-container').forEach(container => {
     // ฟังก์ชันตรวจสอบจำนวนการ์ดที่แสดงตามขนาดหน้าจอ
     const getVisibleCards = () => {
         if (window.innerWidth >= 1200) return 3;
-        if (window.innerWidth >= 768) return 3;
         if (window.innerWidth >= 480) return 2;
         return 1;
     };
@@ -255,7 +254,7 @@ document.querySelectorAll('.carousel-container').forEach(container => {
       <style>
         .carousel-container-too { display: flex; align-items: center; justify-content: center; margin-top: 10px; position: relative; }
         .carousel-too { display: flex; overflow: hidden; width: 900px; }
-        .carousel-track-too { display: flex; transition: transform 0.5s ease-in-out; }
+        .carousel-track-too { display: flex; transition: transform 0.8s ease-in-out; }
         .card-too { min-width: 870px;height: 400px; margin:0 18px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 20px; overflow: hidden; background: rgb(240, 248, 255); display: flex; flex-direction: row; }
         .card-too img { width: 100%; height: 400px; object-fit: cover; }
         .card-content-too {width: 45%; padding: 20px; color: #083E8D; }
@@ -270,21 +269,21 @@ document.querySelectorAll('.carousel-container').forEach(container => {
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .carousel-too { width: 400px; }
-            .card-too { min-width: 346px; margin:10px 20px;box-shadow: 0 4px 8px rgba(0,0,0,0.2);border-radius:20px;overflow:hidden;background:aliceblue; display: flex;flex-direction: column; }
+            .card-too { min-width: 344px; margin:10px 20px;box-shadow: 0 4px 8px rgba(0,0,0,0.2);border-radius:20px;overflow:hidden;background:aliceblue; display: flex;flex-direction: column; }
             .card-content-too {width: 100%; padding: 20px; color: #083E8D; text-align: center; font-size: 20px; font-weight: bold; }
             .card-content-too h2{font-size: 40px; text-align: center; margin-top: 10px; font-weight: bold;}
             .card-content-too p{ font-size: 18px; text-align: center; margin-top: 10px;}
             .img{ width: 100%; height: auto;}
             .card-too img { width: 100%; height: auto; object-fit: cover; }
-            .prev-too  {position: absolute; z-index: 9999; padding:12px;font-size: 15px;margin:0 1px;  left: -4px;}
-            .next-too  {position: absolute; z-index: 9999; padding:12px;font-size: 15px;margin:0 1px;  right: -27px;}
+            .prev-too  {position: absolute; z-index: 9999; padding:12px;font-size: 15px;margin:0 1px;  left: -19px;}
+            .next-too  {position: absolute; z-index: 9999; padding:12px;font-size: 15px;margin:0 1px;  right: -25px;}
         }
     </style>
     <div class="carousel-container-too">
         <button class="prev-too"><img src="Source/left-arrow2.png" alt="" style="width: 1.5rem; margin-right: 5px;"></button>
         <div class="carousel-too">
             <div class="carousel-track-too">
-              <div class="card-too">
+              <div class="card-too"style="margin-left: 8px;">
                 <div class="img"><img src="Source/1.JPG" alt=""></div>
                 <div class="card-content-too ">
                   <h2>ลูกค้า1</h2>
