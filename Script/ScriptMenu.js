@@ -5,7 +5,7 @@ function createNavbar() {
     <div class="container-fluid">
     <a class="navbar-brand" href="./index.html"><img src="Source/IMG_24855.png" ;"="" style="border-radius: 150px;" width="110" height="70"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">MENU</span>
 </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
