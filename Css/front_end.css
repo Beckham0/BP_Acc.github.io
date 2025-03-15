@@ -717,10 +717,10 @@ center;
 
  .card_img span {
   position: absolute;
-  font-size: 4vw !important;
+  font-size: 5vw !important;
   font-weight: bold;
   color: #0F3F8A;
-  left: 54% !important;
+  left: 50% !important;
  }
 
 @media (max-width: 1000px) {
