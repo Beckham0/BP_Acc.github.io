@@ -1,31 +1,40 @@
 function createNavbar() {
     const navbarHTML = `
-<div id="navbar-container" class="navbar-expand-lg" style="z-index: 999 !important;height: 90px;">
-  <nav class="navbar navbar-expand-lg bg-body" style="z-index: 999; background-color: rgba(255, 255, 255, 0.53) !important;height: 90px;">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html"><img src="Source/IMG_24855.png" ;"="" style="border-radius: 150px;" width="110" height="70"></a>
+<div id="navbar-container" class="navbar-expand-lg" style="z-index: 999 !important; height: 90px;">
+  <nav class="navbar navbar-expand-lg bg-body" style="z-index: 999; background-color: rgba(255, 255, 255, 0.53) !important; height: 90px;">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <!-- โลโก้ -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="Source/IMG_24855.png" style="border-radius: 150px;" width="110" height="70">
+      </a>
+
+      <!-- ปุ่ม "ติดต่อเรา" ย้ายมาไว้ข้างหน้า navbar-toggler บนมือถือ -->
+      <a class="navbar-brand2 d-lg-none" href="https://line.me/ti/p/mdboY3IOZG" style="width: 120px; background-color: #0F3F8A; height: 40px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 600; color: #fff; margin-left: 50px;">
+        ติดต่อเรา
+      </a>
+
+      <!-- ปุ่มเปิดเมนูบนมือถือ -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">MENU</span>
-</button>
+      </button>
+
+      <!-- กล่องเมนู -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">เกี่ยวกับเรา</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">บริการเรา</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#clients">ลูกค้าเรา</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">ติดต่อเรา</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับเรา</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">บริการเรา</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clients">ลูกค้าเรา</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อเรา</a></li>
         </ul>
       </div>
+
+      <!-- ปุ่ม "ติดต่อเรา" แบบ PC -->
+      <a class="navbar-brand2 d-none d-lg-flex" href="https://line.me/ti/p/mdboY3IOZG" style="width: 250px; background-color: #0F3F8A; height: 50px; border-radius: 50px; margin: 0 30px; display: flex; align-items: center; justify-content: center; font-size: 25px; font-weight: 600; color: #fff;">
+        ติดต่อเรา
+      </a>
     </div>
   </nav>
-    </div>
+</div>
     `;
     document.getElementById("navbar-container").innerHTML = navbarHTML;
   
