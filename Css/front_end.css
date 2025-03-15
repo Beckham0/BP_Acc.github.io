@@ -717,10 +717,10 @@ center;
 
  .card_img span {
   position: absolute;
-  font-size: 3.5vw !important;
+  font-size: 4vw !important;
   font-weight: bold;
   color: #0F3F8A;
-  left: 43% !important;
+  left: 54% !important;
  }
 
 @media (max-width: 1000px) {
@@ -734,7 +734,7 @@ center;
 
   .card_img span {
     position: absolute;
-    font-size: 5.5vw !important;
+    font-size: 5.3vw !important;
     font-weight: bold;
     color: #0F3F8A;
     font-size: 4vw;
@@ -750,4 +750,26 @@ center;
     bottom: 0 !important;
     right: 5rem !important;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.chaty-channel-list{
+  position: fixed;
+  bottom: 75px;
+  right: 70px;
+  z-index: 10001;
+}
+.chaty-channel-list svg{
+width: 54px;
+height: 54px;
 }
