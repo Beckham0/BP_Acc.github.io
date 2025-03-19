@@ -234,7 +234,7 @@ animation: 12s slide infinite linear;
 }
 
 .logo img {
-  max-width: 357px;; /* ปรับขนาดโลโก้ตามต้องการ */
+  max-width: 100%; /* ปรับขนาดโลโก้ตามต้องการ */
 }
 
 .text-content {
@@ -243,7 +243,7 @@ animation: 12s slide infinite linear;
 }
 
 .text-content h2{
-  font-size: 60px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0;
   line-height: 1.2;
@@ -638,7 +638,7 @@ cursor: pointer;
 
 @media (max-width: 768px) {
       .about-us {
-        flex-direction: column;
+        flex-direction: row;
         display: flex;
         flex-wrap: wrap;
         max-width: 1200px;
@@ -659,7 +659,7 @@ margin-right: 0px;
 }
 
 .text-section h3 {
-  font-size: 20px;
+  font-size: 19px;
   margin-bottom: 23px;
   text-align: center;
 }
