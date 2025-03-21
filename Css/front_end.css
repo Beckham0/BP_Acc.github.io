@@ -164,6 +164,12 @@ padding: 0px 0;
 background-color: #fcfcfc;
 }
 
+.gallery p{
+  font-size: clamp(16px,4vw,26px);
+  padding:0 270px;
+  font-weight: bold;
+  }
+
 .gallery-slide {
 white-space: nowrap;
 animation: 12s slide infinite linear;
@@ -178,6 +184,11 @@ animation: 12s slide infinite linear;
   .gallery img {
       max-width: 100%;
   }
+
+  .gallery p{
+    padding:0 10px;
+    font-weight: bold;
+    }
 }
 
 
@@ -494,13 +505,12 @@ animation: 12s slide infinite linear;
   margin-bottom: 31px;
   text-align: center;
   margin-top: 34px;
-  margin-right: 158px;
 }
 
 .text-section h3 {
   font-size: 36px;
   margin-bottom: 23px;
-  text-align: start;
+  text-align: center;
   font-weight: bold;
 }
 
@@ -658,8 +668,13 @@ margin-right: 0px;
 
 }
 
+.text-section {
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
 .text-section h3 {
-  font-size: 19px;
+  font-size: 18px;
   margin-bottom: 23px;
   text-align: center;
 }

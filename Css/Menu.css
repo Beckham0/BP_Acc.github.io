@@ -128,7 +128,6 @@ margin: 10px 80px;
   gap: 5px;
   padding-right: calc(var(--bs-gutter-x) * 1)!important;
   padding-left: calc(var(--bs-gutter-x) * 1)!important;
-  flex-wrap: wrap !important;
 }
 
 .navbar-brand{
