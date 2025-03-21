@@ -583,9 +583,9 @@ animation: 12s slide infinite linear;
   background: rgba(255, 255, 255, 0);
   color: #ffffff;
   border: none;
-  padding: 10px;
+  padding:24px;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 44px;
 }
 .left {
   left: 10px;
