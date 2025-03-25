@@ -1,7 +1,7 @@
 function createNavbar() {
     const navbarHTML = `
 <div id="navbar-container" class="navbar-expand-lg" style="z-index: 999 !important; height: 90px;">
-  <nav class="navbar navbar-expand-lg bg-body" style="z-index: 999; background-color: rgba(255, 255, 255, 0.53) !important; height: 90px;">
+  <nav class="navbar navbar-expand-lg bg-body" style="z-index: 999 !important; background-color: rgba(255, 255, 255, 0.53) !important; height: 90px;">
     <div class="container-fluid d-flex align-items-center justify-content-between">
       <!-- โลโก้ -->
       <a class="navbar-brand" href="./index.html">
@@ -14,7 +14,7 @@ function createNavbar() {
       </a>
 
       <!-- ปุ่มเปิดเมนูบนมือถือ -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin: 2px;">
         <span class="navbar-toggler-icon">MENU</span>
       </button>
 

@@ -1,11 +1,17 @@
 /* สำหรับตกแต่งหน้า index */
 html, body {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden; /* กันเว็บล้นขอบ */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 a {
@@ -167,7 +173,6 @@ background-color: #fcfcfc;
 .gallery p{
   font-size: clamp(16px,4vw,26px);
   padding:0 270px;
-  font-weight: bold;
   }
 
 .gallery-slide {
@@ -187,7 +192,6 @@ animation: 12s slide infinite linear;
 
   .gallery p{
     padding:0 10px;
-    font-weight: bold;
     }
 }
 
@@ -783,7 +787,11 @@ center;
 
 
 
-
+button:hover {
+  background: #1e90ff;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
 
 
 
