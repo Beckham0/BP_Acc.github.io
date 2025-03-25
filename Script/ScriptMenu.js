@@ -21,10 +21,18 @@ function createNavbar() {
       <!-- กล่องเมนู -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับเรา</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">บริการเรา</a></li>
-          <li class="nav-item"><a class="nav-link" href="#clients">ลูกค้าเรา</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อเรา</a></li>
+           <li class="nav-item">
+            <a class="nav-link" href="#about">เกี่ยวกับเรา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">บริการเรา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#clients">ลูกค้าเรา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">ติดต่อเรา</a>
+          </li>
         </ul>
       </div>
 
