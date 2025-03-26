@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function highlightNav() {
         let scrollY = window.scrollY + 150; // ปรับ Offset ให้ไฮไลต์ตรงกับจุดที่มองเห็น
-
+    
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.offsetHeight;
-
+    
             if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
                 navLinks.forEach(link => {
                     link.classList.remove("active");
