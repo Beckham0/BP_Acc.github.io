@@ -354,7 +354,7 @@ animation: 12s slide infinite linear;
 
 .Endner {
   width: auto;
-  height: 450px;
+  height: 550px;
   display: flex;
   flex-wrap: wrap; /* ทำให้เป็นแถวเดียวเมื่อหน้าจอเล็กลง */
 }
@@ -380,6 +380,8 @@ animation: 12s slide infinite linear;
   padding: 20px;
   box-sizing: border-box;
 }
+
+
 
 .logo2 {
   text-align: center;
@@ -419,7 +421,7 @@ animation: 12s slide infinite linear;
 }
 
 /* ปรับให้เป็นแถวเดียวเมื่อหน้าจอเล็กลง */
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
 
   .Endner {
     width: auto;
