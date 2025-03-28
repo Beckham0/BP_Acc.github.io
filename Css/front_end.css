@@ -193,7 +193,7 @@ animation: 12s slide infinite linear;
 
 .ner {
   width: auto;
-  height: 800px;
+  height: 756px;
   display: flex;
   flex-wrap: wrap; /* ทำให้เป็นแถวเดียวเมื่อหน้าจอเล็กลง */
 }
