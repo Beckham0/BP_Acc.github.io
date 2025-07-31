@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     let images = [
-      "/Source/IMG_1.jpg",
-      "/Source/IMG_2.jpg",
-      "/Source/IMG_3.jpg",
-      "/Source/IMG_4.jpg"
+      "/Source/IMG_1.JPG",
+      "/Source/IMG_2.JPG",
+      "/Source/IMG_3.JPG",
+      "/Source/IMG_4.JPG"
     ];
   
     let slideshow = document.createElement("div");
